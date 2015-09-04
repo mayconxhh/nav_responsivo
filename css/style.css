@@ -1,0 +1,94 @@
+.img {
+  width: 70px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+* {
+  font-family: 'Open Sans' sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.header {
+  width: 100%;
+  background-color: #00f;
+  position: fixed;
+}
+.header__mob {
+  height: 88px;
+  display: block;
+}
+.header__mob .mob__avatar {
+  position: absolute;
+  display: inline-block;
+  margin: 0.5em;
+}
+.header__mob .mob__icon {
+  display: inline-block;
+  float: right;
+}
+.header__mob .mob__icon a {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: block;
+  padding: 1em 0.5em;
+}
+.header__desktop .desktop__avatar {
+  display: none;
+  margin: 0.5em;
+}
+.header__desktop .desktop__nav {
+  left: -100%;
+  height: auto;
+  position: fixed;
+  width: 100%;
+  background-color: #f00;
+  text-align: center;
+}
+.header__desktop .desktop__nav .nav__ul {
+  list-style: none;
+}
+.header__desktop .desktop__nav .nav__ul .nav__li {
+  border-bottom: 1px solid #fff;
+}
+.header__desktop .desktop__nav .nav__ul .nav__li a {
+  padding: 0.6em 0;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+}
+.header__desktop .desktop__nav .nav__ul .nav__li :hover {
+  background-color: #00f;
+}
+@media screen and (min-width: 800px) {
+  .header__mob {
+    display: none;
+  }
+  .header__desktop .desktop__avatar {
+    float: left;
+    display: inline-block;
+  }
+  .header__desktop .desktop__nav {
+    height: 93px;
+    position: initial;
+  }
+  .header__desktop .desktop__nav .nav__ul .nav__li {
+    width: 20%;
+    display: inline-block;
+    border-bottom: none;
+  }
+  .header__desktop .desktop__nav .nav__ul .nav__li :hover {
+    border-bottom: 4px solid #0ff;
+  }
+  .header__desktop .desktop__nav .nav__ul .nav__li a {
+    border-bottom: 4px solid #f00;
+    line-height: 2.5;
+  }
+}
+section p {
+  padding: 7em 4em;
+}

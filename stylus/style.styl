@@ -1,0 +1,111 @@
+@import 'nib'
+
+.img
+	width 70px
+	border-radius 50%
+
+*
+	font-family 'Open Sans' sans-serif
+	margin 0
+	padding 0
+	font-size 16px
+
+.header
+	width 100%
+	background-color blue
+	position fixed
+	&__mob
+		height 88px
+		display block 
+		.mob__avatar
+			position absolute
+			display inline-block
+			margin 0.5em				
+		.mob__icon
+			display inline-block
+			float right
+			a 
+				font-weight bold
+				color white
+				text-decoration none
+				font-size 1.5em
+				display block 
+				padding 1em 0.5em
+	&__desktop
+		.desktop__avatar
+			display none
+			margin 0.5em
+		.desktop__nav
+			left -100%
+			height auto
+			position fixed
+			width 100%
+			background-color red
+			text-align center
+			.nav__ul
+				list-style none
+				.nav__li
+					border-bottom 1px solid white
+					a
+						padding 0.6em 0
+						display block
+						font-weight bold
+						text-decoration none
+						color white
+						font-size 1.5em
+					:hover
+						background-color blue
+				
+@media screen and (min-width 800px)
+	.header
+		&__mob
+			display none
+		&__desktop
+			.desktop__avatar
+				float left
+				display inline-block
+			.desktop__nav
+				height 93px
+				position initial
+				.nav__ul
+					.nav__li
+						width 20%
+						display inline-block
+						border-bottom none
+						:hover
+							border-bottom 4px solid aqua
+						a
+							border-bottom: 4px solid red;
+							line-height 2.5
+    				
+    									
+						
+			
+			
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section 
+	p
+		padding 7em 4em	
